@@ -1,0 +1,8 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+carousel-element {
+  display: flex;
+  background: #e7e6e6;
+}

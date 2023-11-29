@@ -1,0 +1,44 @@
+#carouselContainer {
+  background: #e7e6e6;
+  position: relative;
+  overflow: hidden;
+  height: 60%;
+  padding-top: 1rem;
+  #carouselSection {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 90%;
+    transition: transform 0.5s ease; 
+  }
+  #previousIcon,
+  #nextIcon {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+  }
+  #previousIcon {
+    left: 0.5rem;
+  }
+  #nextIcon {
+    right: 0.5rem;
+  }
+  #dotsButtonGroup {
+    margin: 1rem;
+    .dot {
+      margin: 0.25rem;
+      width: 0.75rem;
+      height: 0.75rem;
+      background: #c2c2c2;
+      border: none;
+      border-radius: 50%;
+    }
+    .dot:hover {
+      background: #ccc;
+    }
+    .dot.active {
+      background: #000;
+    }
+  }
+}
